@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #ddd;
+    padding: 13px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #54BAB9;
+    color: white;
+}
+.point {
+    cursor: pointer;
+}
+.point:hover {
+    background-color: #43a3a1;
+    transition: 0.3s;
+}
+.edit {
+    width: 30%;
+}
+.btn {
+    background-color: #E74C3C;
+    border: #ddd 1px solid;
+    padding: 1px 28px;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    text-decoration:none;
+    position: absolute;
+    right: 13px;
+}
+.btn:hover {
+    background-color: #cc2b19;
+    transition: 0.3s;
+}
+.submit {
+    background-color: #33cc33;
+    border: #43a3a1 1px solid;
+    padding: 1px 28px;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 13px;
+}
+.submit:hover {
+    background-color: #29a329;
+    transition: 0.3s;
+}
+.input {
+    background-color: #54BAB9;
+    border: #bbb 2px solid;
+    width: 34%;
+}
+::placeholder {
+    color: white;
+}
+div {
+    display:none !important;
+}
+script {
+    display:none !important;
+}
+@media only screen and (max-width: 1115px) {
+    .input {
+        width: 20px;
+    }
+    .submit {
+        position: static;
+    }
+    .btn {
+        position: initial;
+    }
+}
+@media only screen and (max-width: 1520px) {
+    .input {
+        width: 90px;
+    }
+}
+footer {
+    text-align: center;
+}

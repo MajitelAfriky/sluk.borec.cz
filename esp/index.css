@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    font-family: "Lucida Console";
+}
+button {
+    cursor: pointer;
+}
+div {
+    display: none !important;
+}
+.text{
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: #031926;
+        color: #DBD9BA;
+    }
+    
+    main {
+    text-align: center;
+    font-size: 2vw;
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    background-color: #020D14;
+    }
+    
+    #form1 {
+        position: absolute;
+        transform: translate(-50%);
+        width: 30%;
+        height: 21%;
+        left: 16.5%;
+        top: 7.5%;
+        background-color: #132C42;
+    }
+    .input {
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        top: 20%;
+        height: 15%;
+        width: 80%;
+        background-color: #132C42;
+        border: none;
+        color: #DBD9BA;
+        border-bottom: 1px solid #DBD9BA;
+    }
+    .odeslat {
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        top: 40%;
+        border: #B2A3D4, 3px, solid;
+        border-radius: 6px;
+        color: #B2A3D4;
+        background-color: #132C42;
+        transition: 250ms;
+        width: 40%;
+        height: 20%;
+        font-weight: bold;
+    }
+    .odeslat:hover {
+        background-color: #B2A3D4;
+        color: #132C42;
+        transition: 250ms;
+    }
+    .colorButton {
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        top: 50%;
+        border: #B2A3D4, 3px, solid;
+        border-radius: 6px;
+        color: #B2A3D4;
+        background-color: #132C42;
+        transition: 250ms;
+        width: 40%;
+        height: 30%;
+        font-weight: bold;
+    }
+    .colorButton:hover {
+        background-color: #B2A3D4;
+        color: #132C42;
+        transition: 250ms;
+    }
+    .color {
+        -webkit-appearance: none; !important
+        width: 40%;
+        height: 40%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .red, .green, .blue, .preset {
+        border: #B2A3D4, 3px, solid;
+        border-radius: 6px;
+        color: #B2A3D4;
+        background-color: #132C42;
+        transition: 250ms;
+        width: 30%;
+        height: 20%;
+        font-weight: bold;
+    }
+    .red:hover, .green:hover, .blue:hover, .preset:hover {
+        background-color: #B2A3D4;
+        color: #132C42;
+        transition: 250ms;
+    }
+    #form2 {
+        position: absolute;
+        transform: translate(50%);
+        width: 30%;
+        height: 21%;
+        right: 16.5%;
+        top: 7.5%;
+        background-color: #132C42;
+        text-align: center;
+    }
+    #form21 {
+        position: relative;
+    }
+    
+    #form22 {
+        position:  relative;
+        top: 10%;
+    }
+    #form23 {
+        position: relative;
+        top: 20%;
+    }
+    
+    #form3 {
+        position: absolute;
+        transform: translate(-50%);
+        top: 7.5%;
+        left: 50%;
+        width: 33%;
+        aspect-ratio: 1 / 1;
+        display: grid;
+        grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        row-gap: 0%;
+        background-color: black;
+        border: #DBD9BA, 1px, solid;
+    }
+    
+    .box {
+            height: 100%;
+            width: 100%;
+            appearance: none;
+            border: #DBD9BA, 1px, solid;
+            
+    }
+    #form31 {
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%);
+        left: 16.5%;
+        top: 31%;
+        width: 30%;
+        height: 15%;
+        background-color: #132C42;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .text {
+        display: none;
+    }
+    body {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+        width: 100%;
+    }
+    main {
+        font-size: 8vw
+    }
+    button {
+        border: black, 1px, solid;
+        box-shadow: 3px 3px #000000;
+    }
+    button:active {
+        transform: translate(3px, 3px);
+        box-shadow: 0px 0px;
+    }
+    .input {
+        border: black, 1px, solid;
+        border-radius: 1rem;
+    }
+    .odeslat {
+        border: black, 1px, solid;
+        border-radius: 1rem;
+        background-color: #33cc33;
+        color: white;
+    }
+    .red, .green, .blue, .police, .ani1, .ani2 {
+        color: white;
+        border: black, 1px, solid;
+        border-radius: 1rem;
+        width: 30%;
+    }
+    .red {
+        background-color: red;
+    }
+    .green {
+        background-color: green;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .police{
+        background-image: linear-gradient(to right, blue , blue, red, red);
+    }
+    #form3 {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 45px ;
+        row-gap: 5px;
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+    }
+    #form31 {
+        position: absolute;
+        top: 60%;
+    }
+    .box {
+        appearance: none;
+        padding: 20px;
+        height: 45px;
+        width: 45px;
+        border: black, 1px, solid;
+        
+    }
+    .box:checked {
+        background-color: red;
+    }
+}

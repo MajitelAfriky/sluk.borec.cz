@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+}
+div {
+    display: none !important;
+}
+body {
+    background-color: #031926;
+
+}
+#bar {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+#btns {
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
+    height: 50%;
+}
+button {
+    border: #B2A3D4, 3px, solid;
+    border-radius: 25px;
+    color: #B2A3D4;
+    background-color: #132C42;
+    transition: 250ms;
+    width: 40%;
+    height: 40%;
+    font-weight: bold;
+    cursor: pointer;
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
+}
+button:hover {
+    background-color: #B2A3D4;
+    color: #132C42;
+    transition: 250ms;
+}
