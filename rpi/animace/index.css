@@ -86,21 +86,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-.split-container {
-    display: flex;
-    gap: 20px;
-}
-
-.left, .right {
-    flex: 1;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.right {
-    font-family: 'Courier New', monospace;
-}
-
 button {
     margin-top: 15px;
     padding: 10px 14px;

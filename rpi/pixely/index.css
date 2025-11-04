@@ -43,12 +43,25 @@ body {
   gap: 10px;
 }
 
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+
 .menu a {
   text-decoration: none;
   color: #cbd5e1;
   padding: 10px 12px;
   border-radius: 6px;
   transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu a:hover {
@@ -99,7 +112,7 @@ body {
 }
 
 .cell {
-  background-color: #e2e8f0;
+  background-color: black;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.15s;
@@ -112,8 +125,6 @@ body {
 
 /* === BARVOVÝ FORM === */
 .color-picker {
-  align-self: flex-start;   /* vlevo */
-  margin-left: 5vw;
   display: flex;
   align-items: center;
   gap: 10px;
